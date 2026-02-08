@@ -1,4 +1,4 @@
-# ClipStash — Workflow Guide
+# aftercopy — Workflow Guide
 
 This document describes how to use Claude Projects effectively as your engineering mentor. It lives **only** in Claude's Project Knowledge — not in the git repo. See "File Location Strategy" below for why.
 
@@ -76,7 +76,7 @@ Upload your current `.swift` files to Project Knowledge (replacing old versions)
 
 Your project has two categories of files that serve different purposes and live in different places.
 
-### In the public git repo (clipstash)
+### In the public git repo (aftercopy)
 
 These files are part of the software project itself. They're legitimate documentation that adds portfolio value.
 
@@ -92,7 +92,7 @@ These files are part of the software project itself. They're legitimate document
 These files are learning scaffolding — they exist to make Claude an effective mentor. They don't belong in the public repo for two reasons:
 
 1. **Security.** Public prompt/workflow files can be modified via PRs, potentially injecting instructions that alter Claude's behavior. The system prompt itself lives in Claude's Project Instructions (the settings field), but supporting docs still influence context.
-2. **Distribution.** Users of ClipStash don't need your mentorship workflow. Shipping these files with the software makes no sense.
+2. **Distribution.** Users of aftercopy don't need your mentorship workflow. Shipping these files with the software makes no sense.
 
 | File | Purpose | Update frequency |
 |------|---------|-----------------|
@@ -106,14 +106,14 @@ These files are learning scaffolding — they exist to make Claude an effective 
 Keep a local folder outside the repo for your mentorship files:
 
 ```
-~/Documents/ClipStash-Mentorship/
+~/Documents/aftercopy-Mentorship/
 ├── SYSTEM_PROMPT.md
 ├── PROJECT_STATE.md
 ├── WORKFLOW_GUIDE.md
 └── Claude_prompting_guide.md
 ```
 
-Optionally, track these in a **separate private repo** (e.g., `clipstash-mentorship`) if you want version history on your learning journey. This is also a portfolio asset — a private one you can selectively share in interviews to demonstrate how you learn.
+Optionally, track these in a **separate private repo** (e.g., `aftercopy-mentorship`) if you want version history on your learning journey. This is also a portfolio asset — a private one you can selectively share in interviews to demonstrate how you learn.
 
 ### Source files live in both places
 
