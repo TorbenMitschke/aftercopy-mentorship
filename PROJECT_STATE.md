@@ -13,7 +13,11 @@
 - [x] PARKING_LOT.md created and committed (chore/parking-lot branch, merged to main)
 - [x] Xcode project created with template for macOS app
 - [x] First retrieval of system clipboard with NSPasteboard.general and .string(forType: .string)
-- [ ] AppDelegate + NSStatusItem setup
+- [x] AppDelegate + NSStatusItem setup
+- [ ] Polish NSStatusItem with icon
+- [ ] Make NSStatusItem interactive
+- [ ] Capture system clipboard
+- [ ] XIB cleanup (window and main menu)
 - [ ] Timer-based clipboard polling
 - [ ] Privacy filter (< 4 chars ignored)
 - [ ] Deduplication logic
@@ -36,6 +40,8 @@
 - Git workflow: branching (`git checkout -b`), staging specific files (`git add <file>`), `-u` flag for push, PR creation, branch deletion after merge.
 - Where print statments need to be located to be shown in the console after the start up of the application
 - Accessed system clipboard and validated it with print statement
+- How to change the menu bar (top right) to display a custom string
+- Context of the status item being outside of launch function
 - [Add more as you learn]
 
 ## Open Questions / Things I Don't Fully Understand Yet

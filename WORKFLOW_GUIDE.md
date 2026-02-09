@@ -29,6 +29,29 @@ This document describes how to use Claude Projects effectively as your engineeri
 │                                               │
 │  └──────────── Loop back to step 1 ──────────┘
 ```
+### **Detailed Branch → PR → Merge Flow**
+```
+1. BRANCH:   git checkout -b feat/your-feature
+2. CODE:     Write implementation in Xcode
+3. REVIEW:   Upload to Project Knowledge → new chat for review
+4. FIX:      Apply fixes from review in Xcode
+5. COMMIT:   git add → git commit -m "feat: ..." → git push -u
+6. PR:       Create pull request on GitHub (DO NOT merge yet)
+7. VERIFY:   Review PR diff, optionally ask Claude for final check
+8. MERGE:    Merge PR on GitHub if all checks pass
+9. CLEANUP:  git checkout main → git pull → git branch -d feat/...
+```
+### When to create a PR:
+
+- After completing and committing a logical, testable unit of work
+- Prefer smaller PRs (1-3 commits) while learning
+
+### When to merge a PR:
+
+- Code review complete, all issues resolved
+- App runs without crashes or warnings
+- You can explain every line of code committed
+- All acceptance criteria met (if defined)
 
 ---
 
