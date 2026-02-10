@@ -70,6 +70,123 @@ Each conversation inherits the system prompt and can access all Project Knowledg
 
 ---
 
+## Writing Acceptance Criteria
+
+Every GitHub Issue needs clear acceptance criteria before you start implementing. Use this template and framework to write bulletproof criteria.
+
+### The Template
+
+Copy this into every issue and fill in the feature-specific sections:
+```markdown
+## Acceptance Criteria
+
+### Functional Requirements
+- [ ] [Core behavior works as specified - be specific about inputs/outputs]
+- [ ] [Edge case 1 handled correctly]
+- [ ] [Edge case 2 handled correctly]
+
+### Code Quality
+- [ ] No compiler warnings (or warnings are understood and documented)
+- [ ] No force-unwraps unless intentional and justified
+- [ ] Swift naming conventions followed
+- [ ] Xcode build succeeds without errors
+
+### Integration
+- [ ] Feature integrates with existing code without breaking functionality
+- [ ] App launches and runs without crashes
+- [ ] [Specific interaction with other component works, if applicable]
+
+### Understanding (Learning Requirement)
+- [ ] Can explain every line of code written for this feature
+- [ ] Can explain why this approach was chosen over alternatives
+- [ ] Can identify at least one limitation or edge case of this approach
+
+### Documentation
+- [ ] ARCHITECTURE.md updated if design decisions were made
+- [ ] PROJECT_STATE.md updated with what was learned
+- [ ] Code comments added for non-obvious logic (if any)
+
+### Testing (Manual for MVP)
+- [ ] Tested on clean build (Cmd+Shift+K → Cmd+B → Cmd+R)
+- [ ] Tested after relaunching the app
+- [ ] [Feature-specific test scenario completed]
+```
+
+### The 5-Question Framework
+
+Before writing criteria, answer these questions:
+
+1. **What is the happy path?** → Functional requirements
+   - "When everything goes right, what should happen?"
+
+2. **What can go wrong?** → Edge cases
+   - "What edge cases or error conditions exist?"
+
+3. **How do I know it's working?** → Testing
+   - "What can I see/test to verify this?"
+
+4. **What did I learn?** → Understanding
+   - "What concept does this feature teach me?"
+
+5. **How does this connect?** → Integration
+   - "What dependencies or interactions exist?"
+
+### Example: Issue #2 "Replace status item text with icon"
+```markdown
+## Acceptance Criteria
+
+### Functional Requirements
+- [ ] Status item displays a custom icon (not text)
+- [ ] Icon is loaded from Assets.xcassets
+- [ ] Icon is properly sized for menu bar (20x20 @2x)
+- [ ] Icon renders as template image (adapts to light/dark mode)
+
+### Code Quality
+- [ ] No compiler warnings
+- [ ] Icon asset properly configured in Assets.xcassets
+- [ ] Code uses `button.image` property (not `button.title`)
+
+### Integration
+- [ ] Removing text title doesn't break status item rendering
+- [ ] App still launches and shows status item immediately
+
+### Understanding
+- [ ] Can explain difference between `button.title` and `button.image`
+- [ ] Can explain what "template image" means for menu bar icons
+- [ ] Can explain how Assets.xcassets files are bundled into the app
+
+### Documentation
+- [ ] ARCHITECTURE.md updated if image loading strategy is significant
+- [ ] PROJECT_STATE.md updated with NSImage/template image learnings
+
+### Testing
+- [ ] Tested on clean build
+- [ ] Icon appears immediately on app launch
+- [ ] Icon visible in both light and dark menu bar appearances
+```
+
+### Quick Criteria Quality Check
+
+Before starting implementation, verify:
+- [ ] Each criterion is **testable** (can verify in <1 minute)
+- [ ] Criteria are **specific** (not vague like "works well")
+- [ ] **Edge cases** are identified
+- [ ] **Understanding** requirements are included
+- [ ] You'll know **exactly when you're done**
+
+### Red Flags (Bad Criteria)
+
+Avoid these patterns:
+- ❌ "Code is clean" → Too vague
+- ❌ "Feature works" → Not specific
+- ❌ "Use the right API" → Doesn't say which API
+- ❌ "Make it look good" → Not testable
+- ❌ "Implement X correctly" → Circular definition
+
+Good criteria are **concrete, testable, and specific**.
+
+---
+
 ## Code Review Checkpoints
 
 ### When to trigger a review

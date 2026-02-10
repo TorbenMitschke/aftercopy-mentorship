@@ -6,6 +6,40 @@
 
 **Iteration 1:** Menu bar presence + clipboard capture + basic display
 
+### Features
+- [x] #1: Basic status item with text "aftercopy"
+- [ ] #2: Replace text with icon
+- [ ] #3: Add menu to status item
+- [ ] #4: Implement Clipboard pulling
+- [ ] #5: Display "Captured: N" in menu
+---
+
+## Moving From One Feature to Another
+
+### The Checklist:
+
+Before starting a new feature, verify the previous one is **fully done**:
+```
+Previous Feature Completion Checklist:
+✅ Code merged to main
+✅ Branch deleted locally and on GitHub
+✅ GitHub Issue closed
+✅ PR closed
+✅ PROJECT_STATE.md updated (moved to "What I've Learned")
+✅ You can explain every line of code
+✅ App runs without issues
+```
+Then start the next feature:
+```
+New Feature Startup Checklist:
+✅ GitHub Issue created with acceptance criteria
+✅ PROJECT_STATE.md updated with "Next Step"
+✅ Concept chat opened (or continued) for learning
+✅ On main branch with latest changes: git checkout main, git pull
+```
+### Current Focus
+Issue #2 - Learning how NSImage works for status bar icons
+
 ## Current Status
 
 - [x] Repository initialized
