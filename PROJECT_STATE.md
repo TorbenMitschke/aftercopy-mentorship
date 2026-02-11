@@ -8,7 +8,7 @@
 
 ### Features
 - [x] #1: Basic status item with text "aftercopy"
-- [ ] #2: Replace text with icon
+- [x] #2: Replace text with icon
 - [ ] #3: Add menu to status item
 - [ ] #4: Implement Clipboard pulling
 - [ ] #5: Display "Captured: N" in menu
@@ -48,7 +48,7 @@ Issue #2 - Learning how NSImage works for status bar icons
 - [x] Xcode project created with template for macOS app
 - [x] First retrieval of system clipboard with NSPasteboard.general and .string(forType: .string)
 - [x] AppDelegate + NSStatusItem setup
-- [ ] Polish NSStatusItem with icon
+- [x] Polish NSStatusItem with icon
 - [ ] Make NSStatusItem interactive
 - [ ] Capture system clipboard
 - [ ] XIB cleanup (window and main menu)
@@ -76,6 +76,9 @@ Issue #2 - Learning how NSImage works for status bar icons
 - Accessed system clipboard and validated it with print statement
 - How to change the menu bar (top right) to display a custom string
 - Context of the status item being outside of launch function
+- How to display an icon in the menu bar
+- How to use Apple's SF Symbols (loaded via `systemSymbolName:`)
+- What image as template means
 - [Add more as you learn]
 
 ## Open Questions / Things I Don't Fully Understand Yet
@@ -86,8 +89,11 @@ Issue #2 - Learning how NSImage works for status bar icons
 - How NSPasteboard.general actual works in combination with .string(forType: .string).
 - How exactly the evaluation of ("The clipboard has: \(content ?? "nothing")") works.
 - How NSPasteboard.changeCount actually works under the hood.
+- How to correctly control properties of .button in detail
 - [Add more as they come up]
 
-## Next Step
+## Next Steps
 
-to be defined
+- Menu on click
+- Remove window
+- Customize icons
