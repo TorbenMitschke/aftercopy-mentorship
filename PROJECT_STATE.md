@@ -49,6 +49,7 @@ Issue #2 - Learning how NSImage works for status bar icons
 - [x] First retrieval of system clipboard with NSPasteboard.general and .string(forType: .string)
 - [x] AppDelegate + NSStatusItem setup
 - [x] Polish NSStatusItem with icon
+- [x] Removed window and menu from Xib
 - [ ] Make NSStatusItem interactive
 - [ ] Capture system clipboard
 - [ ] XIB cleanup (window and main menu)
@@ -79,6 +80,9 @@ Issue #2 - Learning how NSImage works for status bar icons
 - How to display an icon in the menu bar
 - How to use Apple's SF Symbols (loaded via `systemSymbolName:`)
 - What image as template means
+- Understood the connection from Xib to code and how to safely remove them without any warnings
+- Learned the differences between apps activation policies (.regular, .accessory and .prohibited), how and when to change them
+- Touched build configurations -> to change behavior before first function is run
 - [Add more as you learn]
 
 ## Open Questions / Things I Don't Fully Understand Yet
@@ -95,5 +99,4 @@ Issue #2 - Learning how NSImage works for status bar icons
 ## Next Steps
 
 - Menu on click
-- Remove window
 - Customize icons
