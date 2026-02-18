@@ -9,7 +9,7 @@
 ### Features
 - [x] #1: Basic status item with text "aftercopy"
 - [x] #2: Replace text with icon
-- [ ] #3: Add menu to status item
+- [x] #3: Add menu to status item
 - [ ] #4: Implement Clipboard pulling
 - [ ] #5: Display "Captured: N" in menu
 ---
@@ -38,7 +38,7 @@ New Feature Startup Checklist:
 ✅ On main branch with latest changes: git checkout main, git pull
 ```
 ### Current Focus
-Issue #2 - Learning how NSImage works for status bar icons
+Issue #3 - Learning interactive menu for status bar icon works
 
 ## Current Status
 
@@ -50,7 +50,7 @@ Issue #2 - Learning how NSImage works for status bar icons
 - [x] AppDelegate + NSStatusItem setup
 - [x] Polish NSStatusItem with icon
 - [x] Removed window and menu from Xib
-- [ ] Make NSStatusItem interactive
+- [x] Make NSStatusItem interactive
 - [ ] Capture system clipboard
 - [ ] XIB cleanup (window and main menu)
 - [ ] Timer-based clipboard polling
@@ -83,6 +83,10 @@ Issue #2 - Learning how NSImage works for status bar icons
 - Understood the connection from Xib to code and how to safely remove them without any warnings
 - Learned the differences between apps activation policies (.regular, .accessory and .prohibited), how and when to change them
 - Touched build configurations -> to change behavior before first function is run
+- Understand the conncetion and chain of references of AppDelegate -> statusItem -> button -> image & statusItem -> menu -> menuItem
+- When to use a private(set) var vs. let locally
+- Learned the action and target pattern: What message (method) is called and who responses (executes the method)
+- How to seperate commites between chore and feature work
 - [Add more as you learn]
 
 ## Open Questions / Things I Don't Fully Understand Yet
@@ -94,9 +98,11 @@ Issue #2 - Learning how NSImage works for status bar icons
 - How exactly the evaluation of ("The clipboard has: \(content ?? "nothing")") works.
 - How NSPasteboard.changeCount actually works under the hood.
 - How to correctly control properties of .button in detail
+- How to actually make the menu interactive or dynamic
 - [Add more as they come up]
 
 ## Next Steps
 
-- Menu on click
+- dynamic menu
+- icons in menu
 - Customize icons
