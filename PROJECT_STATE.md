@@ -10,7 +10,7 @@
 - [x] #1: Basic status item with text "aftercopy"
 - [x] #2: Replace text with icon
 - [x] #3: Add menu to status item
-- [ ] #4: Implement Clipboard pulling
+- [x] #4: Implement Clipboard pulling
 - [ ] #5: Display "Captured: N" in menu
 ---
 
@@ -87,6 +87,9 @@ Issue #3 - Learning interactive menu for status bar icon works
 - When to use a private(set) var vs. let locally
 - Learned the action and target pattern: What message (method) is called and who responses (executes the method)
 - How to seperate commites between chore and feature work
+- How to create a class and basic contents of it in Swift
+- Understand if let concept for optional values
+- How to use timers start, what to do on the interval and how to stop
 - [Add more as you learn]
 
 ## Open Questions / Things I Don't Fully Understand Yet
@@ -99,6 +102,7 @@ Issue #3 - Learning interactive menu for status bar icon works
 - How NSPasteboard.changeCount actually works under the hood.
 - How to correctly control properties of .button in detail
 - How to actually make the menu interactive or dynamic
+- 
 - [Add more as they come up]
 
 ## Next Steps
