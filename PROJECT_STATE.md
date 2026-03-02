@@ -38,7 +38,7 @@ New Feature Startup Checklist:
 ✅ On main branch with latest changes: git checkout main, git pull
 ```
 ### Current Focus
-Issue #3 - Learning interactive menu for status bar icon works
+Issue #5 - Store and display captured clipboard items.
 
 ## Current Status
 
@@ -51,13 +51,13 @@ Issue #3 - Learning interactive menu for status bar icon works
 - [x] Polish NSStatusItem with icon
 - [x] Removed window and menu from Xib
 - [x] Make NSStatusItem interactive
-- [ ] Capture system clipboard
-- [ ] XIB cleanup (window and main menu)
-- [ ] Timer-based clipboard polling
-- [ ] Privacy filter (< 4 chars ignored)
+- [x] Capture system clipboard
+- [x] XIB cleanup (window and main menu)
+- [x] Timer-based clipboard polling
+- [x] Privacy filter (< 4 chars ignored)
+- [x] Clean quit behavior
 - [ ] Deduplication logic
 - [ ] "Captured: N" display in menu bar
-- [ ] Clean quit behavior
 
 ## Architecture Decisions Made
 
@@ -102,7 +102,8 @@ Issue #3 - Learning interactive menu for status bar icon works
 - How NSPasteboard.changeCount actually works under the hood.
 - How to correctly control properties of .button in detail
 - How to actually make the menu interactive or dynamic
-- 
+- How to build the mechanics of notifying only when the clipboard captures something
+- How to add more delicate ui like animated or even colorful icons
 - [Add more as they come up]
 
 ## Next Steps
