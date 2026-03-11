@@ -11,7 +11,7 @@
 - [x] #2: Replace text with icon
 - [x] #3: Add menu to status item
 - [x] #4: Implement Clipboard pulling
-- [ ] #5: Display "Captured: N" in menu
+- [x] #5: Display "Captured: N" in menu
 ---
 
 ## Moving From One Feature to Another
@@ -56,8 +56,9 @@ Issue #5 - Store and display captured clipboard items.
 - [x] Timer-based clipboard polling
 - [x] Privacy filter (< 4 chars ignored)
 - [x] Clean quit behavior
-- [ ] Deduplication logic
-- [ ] "Captured: N" display in menu bar
+- [x] Deduplication logic
+- [x] "Captured: N" display in menu bar
+- [ ] Show dynamic history of copied strings as list in menu
 
 ## Architecture Decisions Made
 
@@ -90,6 +91,9 @@ Issue #5 - Store and display captured clipboard items.
 - How to create a class and basic contents of it in Swift
 - Understand if let concept for optional values
 - How to use timers start, what to do on the interval and how to stop
+- How to actually use closures
+- How to sperate concerns and being able to abstract functionality into different classes (monitor and store)
+- How to update the title of an item within a closure
 - [Add more as you learn]
 
 ## Open Questions / Things I Don't Fully Understand Yet
@@ -104,6 +108,10 @@ Issue #5 - Store and display captured clipboard items.
 - How to actually make the menu interactive or dynamic
 - How to build the mechanics of notifying only when the clipboard captures something
 - How to add more delicate ui like animated or even colorful icons
+- How to store copied items permanently
+- How to handle non-string copied items
+- How to restrict to a certain amount of history (policies)
+- How to paste a selected item
 - [Add more as they come up]
 
 ## Next Steps
